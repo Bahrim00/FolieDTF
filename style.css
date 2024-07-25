@@ -302,16 +302,72 @@ video {
     width: 80%;
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 3em;
 }
 
-@media (max-width: 768px) {
-    .text_section2 {
-        font-size: 1rem;
+@media (max-width: 320px) {
+    .section2 .text_section2 h1  {
+        font-size: 5px;
+        background-color: red;
     }
+  }
 
-   
-}
+  @media (min-width: 321px) and (max-width: 360px) {
+    .section2 .text_section2 h1  {
+        font-size: 0.51em;
+    }
+  }
+
+  @media (min-width: 361px) and (max-width: 480px) {
+    .section2 .text_section2 h1  {
+        font-size: 1em;
+    }
+  }
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .section2 .text_section2 h1  {
+        font-size: 1em;
+    }
+  }
+
+
+/* Tablete (portret) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section2 .text_section2 h1  {
+        font-size: 0.5em;
+    }
+  }
+  
+  /* Tablete (peisaj) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .section2 .text_section2 h1  {
+        font-size: 1em;
+    }
+  }
+  
+  /* Laptopuri și desktopuri mici */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .section2 .text_section2 h1  {
+        font-size: 1em;
+    }
+  }
+  
+  /* Laptopuri mari / Desktopuri */
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    .section2 .text_section2 h1  {
+        font-size: 1em;
+    }
+  }
+  
+  /* Desktopuri mari */
+  @media (min-width: 1441px) {
+    .section2 .text_section2 h1  {
+        font-size: 1em;
+    }
+  }
+
+
+
 
 
 .card-container {
@@ -342,7 +398,7 @@ video {
 }
 
 .card-content h2 {
-    font-size: 1.6rem;
+    font-size: 1.6em;
     margin-bottom: 0.rem;
     color: var(--primary-color-dark);
 }
@@ -916,6 +972,7 @@ nav {
         align-items: flex-start;
         gap: 1rem;
     }
+    
 
     .nav__menu__btn {
         display: block;
@@ -951,111 +1008,59 @@ nav {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
     }
+    
 }
 
 
 
 
-/* Media query pentru ecrane cu dimensiunea de 320 x 568 */
-@media (max-width: 320px) {
-    body {
-        font-size: 0.8rem; /* Ajustează această valoare în funcție de necesități */
-    }
-
-    .nav__logo a {
-        font-size: 2rem; /* Ajustează dimensiunea fontului pentru logo */
-    }
-
-    .nav__menu__btn {
-        font-size: 1rem; /* Ajustează dimensiunea fontului pentru butonul de meniu */
-    }
-
-    .nav__links {
-        font-size: 1rem; /* Ajustează dimensiunea fontului pentru link-urile din meniu */
-    }
-
-    .nav__links a {
-        font-size: 1rem; /* Ajustează dimensiunea fontului pentru link-urile din meniu */
-    }
-
-    .header__container .overlay-text {
-        font-size: 2vw; /* Ajustează dimensiunea fontului pentru textul suprapus */
-    }
-
-    .container_section1 .text_section1 h1 {
-        font-size: 1.2rem; /* Ajustează dimensiunea fontului pentru titlu */
-    }
-
-    .container_section1 .text_section1 p {
-        font-size: 0.8rem; /* Ajustează dimensiunea fontului pentru paragrafe */
-    }
-
-    .container_section1 button {
-        font-size: 0.8rem; /* Ajustează dimensiunea fontului pentru buton */
-    }
-
-    .section2 .text_section2 h1{
-        font-size: 1rem; /* Ajustează dimensiunea fontului pentru textul din secțiunea 2 */
-    }
-
-    .card-content h2 {
-        font-size: 1.2rem; /* Ajustează dimensiunea fontului pentru titlul cardului */
-    }
-
-    .card-content p {
-        font-size: 1rem; /* Ajustează dimensiunea fontului pentru paragrafele din card */
-    }
-
-    .special-card .card-content h2 {
-        font-size: 1.5rem; /* Ajustează dimensiunea fontului pentru titlul cardului special */
-    }
-
-    .special-card .card-content .special-card_p {
-        font-size: 1rem; /* Ajustează dimensiunea fontului pentru paragrafele din cardul special */
-    }
-
-    .info h2 {
-        font-size: 1.5rem; /* Ajustează dimensiunea fontului pentru titlurile din secțiunea info */
-    }
-
-    .info-text {
-        font-size: 0.9rem; /* Ajustează dimensiunea fontului pentru textul din secțiunea info */
-    }
-
+/* Media Queries pentru ecrane medii și mari */
+@media (max-width: 1200px) {
     .contact-title {
-        font-size: 1.2rem; /* Ajustează dimensiunea fontului pentru titlul secțiunii de contact */
+        font-size: 1.75rem;
     }
 
-    .contact p {
-        font-size: 0.8rem; /* Ajustează dimensiunea fontului pentru paragrafele din secțiunea de contact */
+    .contact .contact-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact .contact-container {
+        padding: 1.5rem;
+    }
+
+    .contact-item {
+        padding: 0.75rem;
     }
 
     .contact-item h3 {
-        font-size: 0.9rem; /* Ajustează dimensiunea fontului pentru titlurile din itemele de contact */
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 1.25rem;
     }
 
-    .contact-item p {
-        font-size: 0.8rem; /* Ajustează dimensiunea fontului pentru paragrafele din itemele de contact */
+    .contact .contact-container {
+        padding: 1rem;
     }
 
-    .contact-form label {
-        font-size: 0.9rem; /* Ajustează dimensiunea fontului pentru etichetele din formular */
+    .contact-item {
+        padding: 0.5rem;
     }
 
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 0.9rem; /* Ajustează dimensiunea fontului pentru input-uri și textarea */
+    .contact-item h3 {
+        font-size: 0.9rem;
     }
 
-    .contact-form button {
-        font-size: 0.9rem; /* Ajustează dimensiunea fontului pentru buton */
-    }
-
-    .footer-content p {
-        font-size: 0.8rem; /* Ajustează dimensiunea fontului pentru paragrafele din footer */
-    }
-
-    .footer-links a {
-        font-size: 0.8rem; /* Ajustează dimensiunea fontului pentru link-urile din footer */
+    .contact-form {
+        width: 80%;
     }
 }
