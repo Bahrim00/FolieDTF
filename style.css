@@ -307,8 +307,7 @@ video {
 
 @media (max-width: 320px) {
     .section2 .text_section2 h1  {
-        font-size: 5px;
-        background-color: red;
+        font-size: 0.51em;
     }
   }
 
@@ -320,7 +319,7 @@ video {
 
   @media (min-width: 361px) and (max-width: 480px) {
     .section2 .text_section2 h1  {
-        font-size: 1em;
+        font-size: 0.51em;
     }
   }
 
