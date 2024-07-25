@@ -735,7 +735,7 @@ video {
     
 }
 
-@media (max-width: 384px) {
+@media (max-width: 360px) {
     .contact-title {
         font-size: 1.25rem;
     }
